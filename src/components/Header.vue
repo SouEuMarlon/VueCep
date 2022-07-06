@@ -1,5 +1,5 @@
 <template>
-  <header class="">
+  <header>
     <div class="glass-bg">
       <h1><span>Vue</span>Cep</h1>
     </div>
@@ -19,7 +19,7 @@ export default {};
   );
   backdrop-filter: blur(42px);
 
-  @apply w-full pl-5 h-14 flex items-center justify-center;
+  @apply w-full h-14 flex items-center justify-center;
 }
 header {
   @apply bg-green-700;
