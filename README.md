@@ -1,7 +1,30 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# VueCep
 
-## Recommended IDE Setup
+Aplicação para busca de CEP (Brazillian zip code).<br>
+Utilizei VueJS + TailwindCSS (para estilização) e Axios (para consumo da API ViaCep)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+
+## Tecnologias utilizadas
+
+ - [VueJS(vite)](https://vitejs.dev/)
+ - [TailwindCSS](https://tailwindcss.com/)
+ - [Axios](https://axios-http.com/ptbr/)
+ - [ViaCep (API)](https://viacep.com.br/)
+
+
+## Demonstração
+
+![App Screenshot](https://media.giphy.com/media/nYF3cKFb672auWj4eW/giphy.gif)
+
+
+## Screenshot
+
+![App Screenshot](https://github.com/marlonmnz/pictures/blob/master/vuecep.jpg?raw=true)
+
+
+## Deploy
+
+Para testar a aplicação acesse:
+[VueCep](https://vuecep.vercel.app/)
