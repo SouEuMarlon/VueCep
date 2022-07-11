@@ -3,7 +3,7 @@
     <form class="form_wrapper">
       <div class="input_container">
         <input
-          type="text"
+          type="tipo"
           name="cep"
           placeholder=" "
           class="input_default"
@@ -25,37 +25,37 @@
         <tr>
           <th>CEP</th>
           <td>
-            <p v-if="response !== null">{{ response.cep }}</p>
+            <p v-if="hasContent">{{ response.cep }}</p>
           </td>
         </tr>
         <tr>
           <th>Logradouro</th>
           <td>
-            <p v-if="response !== null">{{ response.logradouro }}</p>
+            <p v-if="hasContent">{{ response.logradouro }}</p>
           </td>
         </tr>
         <tr>
           <th>Bairro</th>
           <td>
-            <p v-if="response !== null">{{ response.bairro }}</p>
+            <p v-if="hasContent">{{ response.bairro }}</p>
           </td>
         </tr>
         <tr>
           <th>Complemento</th>
           <td>
-            <p v-if="response !== null">{{ response.complemento }}</p>
+            <p v-if="hasContent">{{ response.complemento }}</p>
           </td>
         </tr>
         <tr>
           <th>Cidade</th>
           <td>
-            <p v-if="response !== null">{{ response.localidade }}</p>
+            <p v-if="hasContent">{{ response.localidade }}</p>
           </td>
         </tr>
         <tr>
           <th>Estado</th>
           <td>
-            <p v-if="response !== null">{{ response.uf }}</p>
+            <p v-if="hasContent">{{ response.uf }}</p>
           </td>
         </tr>
       </table>
@@ -75,8 +75,10 @@ export default {
     };
   },
 
-  created() {
-    this.getCep();
+  computed: {
+    hasContent() {
+      return this.response !== null;
+    },
   },
 
   methods: {
