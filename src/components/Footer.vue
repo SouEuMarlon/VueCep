@@ -1,8 +1,8 @@
 <template>
   <footer>
     <p>
-      <span>Developed by </span
-      ><a href="https://github.com/SouEuMarlon" target="_blank">Marlon Menezes</a>
+      <span>Developed by </span>
+      <a href="https://github.com/SouEuMarlon" target="_blank">Marlon Menezes</a>
     </p>
   </footer>
 </template>
